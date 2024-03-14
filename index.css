@@ -37,6 +37,20 @@ button {
   background-color: var(--White);
 }
 
+.hide {
+  /* 1. Hide it visually */
+  opacity: 0;
+
+  /* 2. Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+
+  /* 3. Hide from screen readers */
+  visibility: none;
+
+  /* 4. Remove from page */
+  display: none;
+}
+
 .desktop-background-img {
   width: 100%;
 }
