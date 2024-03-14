@@ -20,6 +20,10 @@ html {
   font-family: "Work Sans", sans-serif;
 }
 
+body {
+  background-color: var(--LightPink);
+}
+
 a {
   text-decoration: none;
 }
@@ -33,15 +37,6 @@ button {
   background-color: var(--White);
 }
 
-.background {
-  /* background-color: blue; */
-  background-color: var(--LightPink);
-
-  height: 145vh;
-
-  position: relative;
-}
-
 .desktop-background-img {
   width: 100%;
 }
@@ -51,12 +46,11 @@ button {
 }
 
 .container {
+  position: relative;
   max-width: 78rem;
   width: 100%;
-  position: absolute;
-  top: 16.5%;
-  left: 50%;
-  transform: translate(-50%, 1.4%);
+  margin-top: -16.5rem;
+  margin-inline: auto;
 }
 
 .component {
@@ -141,14 +135,7 @@ button {
 /* 768px / 16px = 48em */
 @media (max-width: 48em) {
   .container {
-    max-width: 55rem;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, 1.4%);
-  }
-
-  .background {
-    height: 475vh;
+    max-width: 70rem;
   }
 
   .desktop-background-img {
@@ -161,51 +148,18 @@ button {
   }
 }
 
-/* phones */
-/* 375px / 16px = 23.4375em */
-
-/* @media (max-width: 23.4375em) {
-  .container {
-    max-width: 36rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .component {
-    width: 99%;
-    padding: 8rem 3rem 4rem 3rem;
-  }
-
-  .content-heading {
-    gap: 2rem;
-  }
-
-  .heading {
-    font-size: 1.7rem;
-  }
-} */
-
-/* phones */
+/*large phones */
 /* 425px / 16px = 26.5625em */
 @media (max-width: 26.875em) {
-  .background {
-    height: 445vh;
-  }
-
   .container {
-    max-width: 36rem;
+    max-width: 39rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, -17.6%);
   }
 
   .component {
-    width: 99%;
-    padding: 8rem 3rem 4rem 3rem;
+    padding: 4rem 3rem 4rem 3rem;
   }
   .content-heading {
     gap: 2rem;
@@ -217,5 +171,14 @@ button {
 
   .attribution {
     font-size: 1.2rem;
+  }
+}
+
+/* phones */
+/* 375px / 16px = 23.4375em */
+
+@media (max-width: 23.4375em) {
+  .container {
+    max-width: 36rem;
   }
 }
