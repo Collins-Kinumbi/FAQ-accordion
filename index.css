@@ -174,11 +174,28 @@ button {
   }
 }
 
-/* phones */
+/* Medium phones */
 /* 375px / 16px = 23.4375em */
 
 @media (max-width: 23.4375em) {
   .container {
     max-width: 36rem;
+  }
+}
+
+/* Small phones */
+/* 320px / 16px = 20em */
+@media (max-width: 20em) {
+  .container {
+    max-width: 30rem;
+  }
+  .component {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+  .heading {
+    font-size: 1.6rem;
+  }
+  .attribution {
+    font-size: 1rem;
   }
 }
